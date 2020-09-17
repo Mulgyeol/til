@@ -28,6 +28,7 @@
     data_queue.get() #처음 집어넣은 데이터를 꺼냄 dequeue => 'stringdata'
     data_queue.qsize() #queue의 크기 => 1
     data_queue.get() # => 1
+```
 
 
   
