@@ -17,4 +17,4 @@
   - push(): 데이터를 스택에 넣기
   - pop(): 데이터를 스택에서 꺼내기
 
-<p align="center"><img src="/img/stack01.png" width = "800px"></p><br>
+<p align="center"><img src="/Data%20Structure/img/stack01.png" width = "800px"></p><br>
