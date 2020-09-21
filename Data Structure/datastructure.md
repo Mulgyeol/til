@@ -30,7 +30,7 @@
 <p align="center"><img src="/Data%20Structure/img/linear01.png" width = "500px"></p><br>
 
 - 비선형구조란 `하나의 자료 뒤에 여러 개의 자료가 존재할 수 있는 것을 의미`한다.
-<p align="center"><img src="/Data%20Structure/img/nonlinear01.png" width = "500px"></p><br>
+<p align="center"><img src="/Data%20Structure/img/nonlinear01.png" width = "300px"></p><br>
 
 
 
