@@ -2,7 +2,7 @@
 
 **git flow : 브랜치를 어떻게 운영할 것인가에 대한 좋은 사례**
 
-<br><p align="center"><img src="/img/1.png"></p><br>
+<br><p align="center"><img src="/git&github/img/1.png"></p><br>
 
 #### **git flow model**
 
@@ -27,7 +27,7 @@ $ git add main.txt
 $ git commit -m "work 1"
 ```
 
-<br><p align="center"><img src="/img/2.png"></p><br><br><br>
+<br><p align="center"><img src="/git&github/img/2.png"></p><br><br><br>
 
 
 #### **git tag**
@@ -39,7 +39,7 @@ $ git commit -m "work 1"
 $ git tag 0.1
 ```
 
-<br><p align="center"><img src="/img/3.png"></p><br><br><br>
+<br><p align="center"><img src="/git&github/img/3.png"></p><br><br><br>
 
 #### **master branch**
 
@@ -84,7 +84,7 @@ $ git commit -am "work 2"
 
 ```
 
-<br><p align="center"><img src="/img/4.png"></p><br>
+<br><p align="center"><img src="/git&github/img/4.png"></p><br>
 
 <br>
 
@@ -106,7 +106,7 @@ $ git commit -am "work 3"
 
 ```
 
-<br><p align="center"><img src="/img/5.png"></p><br>
+<br><p align="center"><img src="/git&github/img/5.png"></p><br>
 
 이런식으로 develop에서 작업을 진행한다.
 
@@ -172,7 +172,7 @@ $ git commit -am "release 0.2 1"
 $ git commit -am "release 0.2 2"
 ```
 
-<br><p align="center"><img src="/img/6.png"></p><br>
+<br><p align="center"><img src="/git&github/img/6.png"></p><br>
 
 <br><br>
 
@@ -185,7 +185,7 @@ $ git commit -am "release 0.2 2"
 > 그림 상에서도 release에서 develop으로 계속 병합 작업을 해주면서  
 > 나중에 develop에서 발생할 충돌을 최소화 시킨다.
 
-<br><p align="center"><img src="/img/7.png"></p><br>
+<br><p align="center"><img src="/git&github/img/7.png"></p><br>
 
 <br>
 
@@ -202,11 +202,11 @@ $ git checkout develop
 $ git merge release/0.2
 ```
 
-<br><p align="center"><img src="/img/8.png"></p><br>
+<br><p align="center"><img src="/git&github/img/8.png"></p><br>
 
-<br><p align="center"><img src="/img/9.png"></p><br>
+<br><p align="center"><img src="/git&github/img/9.png"></p><br>
 
-<br><p align="center"><img src="/img/10.png"></p><br>
+<br><p align="center"><img src="/git&github/img/10.png"></p><br>
 
 <br>
 이렇게 release에서 작업을 하고 develop으로 병합하는 작업을 반복하면서 release 준비가 끝난다.
@@ -219,7 +219,7 @@ $ git checkout release/0.2
 
 #### **release↔ master**
 
-<br><p align="center"><img src="/img/11.png"></p><br>
+<br><p align="center"><img src="/git&github/img/11.png"></p><br>
 
 > 그림처럼 이제 잘 작동하는 걸 최종적으로 확인했다고 master branch에 병합한다.  
 > 일반적인 병합을 사용하지 않고 merge commit을 남기는 형식의 병합을 사용한다.
@@ -247,8 +247,8 @@ $ git merge --no-ff release/0.2
 <br>
 release/0.2와 병합했다 라는 commit message를 의도적으로 만들면서 log상의 기록을 남겼다.
 
-<br><p align="center"><img src="/img/12.png"></p><br>
-<br><p align="center"><img src="/img/13.png"></p><br>
+<br><p align="center"><img src="/git&github/img/12.png"></p><br>
+<br><p align="center"><img src="/git&github/img/13.png"></p><br>
 
 
 > master가 release/0.2를 따라왔다.  
@@ -262,8 +262,8 @@ release/0.2와 병합했다 라는 commit message를 의도적으로 만들면�
 $ git branch -d release/0.2
 ```
 
-<br><p align="center"><img src="/img/14.png"></p><br>
-<br><p align="center"><img src="/img/15.png"></p><br>
+<br><p align="center"><img src="/git&github/img/14.png"></p><br>
+<br><p align="center"><img src="/git&github/img/15.png"></p><br>
 
 <br>
 
@@ -273,8 +273,8 @@ $ git branch -d release/0.2
 $ git tag 0.2
 ```
 
-<br><p align="center"><img src="/img/16.png"></p><br>
-<br><p align="center"><img src="/img/17.png"></p><br>
+<br><p align="center"><img src="/git&github/img/16.png"></p><br>
+<br><p align="center"><img src="/git&github/img/17.png"></p><br>
 
 0.2 버전 출시 완료.
 
@@ -332,7 +332,7 @@ $ git add short.txt
 $ git commit -am "short 1"
 ```
 
-<br><p align="center"><img src="/img/18.png"></p><br>
+<br><p align="center"><img src="/git&github/img/18.png"></p><br>
 
 <br>
 
@@ -352,7 +352,7 @@ $ git commit -am "short 1"
 $ git commit -am "short 2"
 ```
 
-<br><p align="center"><img src="/img/19.png"></p><br>
+<br><p align="center"><img src="/git&github/img/19.png"></p><br>
 
 **long 프로젝트도 병렬로 동시 진행한다.**
 
@@ -372,7 +372,7 @@ $ git checkout feature/long
 $ git commit -am "long 2"
 ```
 
-<br><p align="center"><img src="/img/20.png"></p><br>
+<br><p align="center"><img src="/git&github/img/20.png"></p><br>
 
 <br><br>
 
@@ -387,8 +387,8 @@ $ git checkout devlop
 $ git merge --no-ff feature/short #이번엔 short만 담아서 출시
 ```
 
-<br><p align="center"><img src="/img/21.png"></p><br>
-<br><p align="center"><img src="/img/22.png"></p><br>
+<br><p align="center"><img src="/git&github/img/21.png"></p><br>
+<br><p align="center"><img src="/git&github/img/22.png"></p><br>
 
 <br>
 
@@ -398,7 +398,7 @@ $ git merge --no-ff feature/short #이번엔 short만 담아서 출시
 $ git branch -d feature/short #삭제
 ```
 
-<br><p align="center"><img src="/img/23.png"></p><br>
+<br><p align="center"><img src="/git&github/img/23.png"></p><br>
 
 <br>
 
@@ -408,8 +408,8 @@ $ git branch -d feature/short #삭제
 $ git checkout -b release/1.0
 ```
 
-<br><p align="center"><img src="/img/24.png"></p><br>
-<br><p align="center"><img src="/img/25.png"></p><br>
+<br><p align="center"><img src="/git&github/img/24.png"></p><br>
+<br><p align="center"><img src="/git&github/img/25.png"></p><br>
 
 <br><br>
 
@@ -427,7 +427,7 @@ $ git checkout -b release/1.0
 $ git commit -am "short 3 - bug fix"
 ```
 
-<br><p align="center"><img src="/img/26.png"></p><br>
+<br><p align="center"><img src="/git&github/img/26.png"></p><br>
 
 <br><br>
 
@@ -445,7 +445,7 @@ $ git commit -am "short 3 - bug fix"
 $ git commit -am "work 4 - bug fix"
 ```
 
-<br><p align="center"><img src="/img/27.png"></p><br>
+<br><p align="center"><img src="/git&github/img/27.png"></p><br>
 
 이제 모든 작업을 마쳤다면 master로 보내고 develop에 머지해야한다.
 
@@ -462,7 +462,7 @@ $ git checkout develop
 $ git merge --no-ff release/1.0
 ```
 
-<br><p align="center"><img src="/img/28.png"></p><br>
+<br><p align="center"><img src="/git&github/img/28.png"></p><br>
 
 <br>
 
@@ -473,7 +473,7 @@ $ git checkout master
 $ git merge --no-ff release/1.0
 ```
 
-<br><p align="center"><img src="/img/29.png"></p><br>
+<br><p align="center"><img src="/git&github/img/29.png"></p><br>
 
 <br>
 
@@ -483,7 +483,7 @@ $ git merge --no-ff release/1.0
 $ git tag 1.0
 ```
 
-<br><p align="center"><img src="/img/30.png"></p><br>
+<br><p align="center"><img src="/git&github/img/30.png"></p><br>
 
 <br>
 
@@ -493,7 +493,7 @@ $ git tag 1.0
 $ git branch -d release/1.0
 ```
 
-<br><p align="center"><img src="/img/31.png"></p><br>
+<br><p align="center"><img src="/git&github/img/31.png"></p><br>
 
 <br>
 
@@ -516,7 +516,7 @@ $ git branch -d release/1.0
 $ git checkout -b hotfixes/1.1
 ```
 
-<br><p align="center"><img src="/img/32.png"></p><br>
+<br><p align="center"><img src="/git&github/img/32.png"></p><br>
 
 <br>
 
@@ -536,8 +536,8 @@ $ git add hotfix-1_1.txt
 $ git commit -am "hotfix 1.1"
 ```
 
-<br><p align="center"><img src="/img/33.png"></p><br>
-<br><p align="center"><img src="/img/34.png"></p><br>
+<br><p align="center"><img src="/git&github/img/33.png"></p><br>
+<br><p align="center"><img src="/git&github/img/34.png"></p><br>
 
 <br>
 
@@ -548,8 +548,8 @@ $ git checkout develop
 $ git merge --no-ff hotfixes/1.1
 ```
 
-<br><p align="center"><img src="/img/35.png"></p><br>
-<br><p align="center"><img src="/img/36.png"></p><br>
+<br><p align="center"><img src="/git&github/img/35.png"></p><br>
+<br><p align="center"><img src="/git&github/img/36.png"></p><br>
 
 <br>
 
@@ -560,9 +560,9 @@ $ git checkout master
 $ git merge --no-ff hotfixes/1.1
 ```
 
-<br><p align="center"><img src="/img/37.png"></p><br>
+<br><p align="center"><img src="/git&github/img/37.png"></p><br>
 
-<br><p align="center"><img src="/img/38.png"></p><br>
+<br><p align="center"><img src="/git&github/img/38.png"></p><br>
 
 <br>
 
@@ -572,7 +572,7 @@ $ git merge --no-ff hotfixes/1.1
 $ git tag 1.1
 ```
 
-<br><p align="center"><img src="/img/39.png"></p><br>
+<br><p align="center"><img src="/git&github/img/39.png"></p><br>
 
 <br>
 
@@ -582,7 +582,7 @@ $ git tag 1.1
 $ git branch -d hotfixes/1.1
 ```
 
-<br><p align="center"><img src="/img/40.png"></p><br><br>
+<br><p align="center"><img src="/git&github/img/40.png"></p><br><br>
 
 이렇게 1.1 버전을 바로 출시한다.
 
